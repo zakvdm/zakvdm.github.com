@@ -1,16 +1,469 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
-  <link href="http://zakvdm.github.com/atom.xml" rel="self"/>
-  <link href="http://zakvdm.github.com/"/>
-  <updated>2013-02-01T21:52:36+02:00</updated>
-  <id>http://zakvdm.github.com/</id>
+  <title><![CDATA[The Izakaya]]></title>
+  <link href="http://zakvdm.org/atom.xml" rel="self"/>
+  <link href="http://zakvdm.org/"/>
+  <updated>2013-02-03T14:33:31+02:00</updated>
+  <id>http://zakvdm.org/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Zak van der Merwe]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Dirty tricks for writing better Japanese]]></title>
+    <link href="http://zakvdm.org/blog/2012/12/04/dirty-tricks-for-writing-better-japanese/"/>
+    <updated>2012-12-04T00:00:00+02:00</updated>
+    <id>http://zakvdm.org/blog/2012/12/04/dirty-tricks-for-writing-better-japanese</id>
+    <content type="html"><![CDATA[<p>Here&#8217;s a nifty trick I&#8217;ve been using when writing Japanese emails, etc. Like
+so many things, it uses the power of Google and is best explained by example.</p>
+
+<h3>The Example</h3>
+
+<p>Let&#8217;s say I&#8217;m trying to write an email to a Japanese friend who I recently met
+up with for the first time in a few years. I want to say something that
+roughly translates to:</p>
+
+<blockquote><p>&#8220;It was really great to see you recently in Japan. Talking and hanging out
+with you just like old times reminded me of what a dear friend you are to me.&#8221;</p></blockquote>
+
+<p>A bit soppy, but it&#8217;ll do for an example.</p>
+
+<p>So I take a quick stab at writing this in Japanese not worrying too much about
+errors for now:</p>
+
+<blockquote><p>この間、日本で会えてくれて、本当に嬉しかったよ。数年振りでも、相変わらずXちゃんと話ができたり、楽しく遊んだり出来たので、やっぱり、Xちゃんは僕の心に親
+しむ友達と思えたよ！</p></blockquote>
+
+<p>Now, I fully expect my Japanese to be filled with grammatical slips and
+nonsensical bits (history has shown!). Let&#8217;s see if we can&#8217;t improve on my
+first attempt.</p>
+
+<!-- more -->
+
+
+<h3>The <strong>Method</strong></h3>
+
+<p>The trick is to use google&#8217;s quotation mark search feature. When you put a
+term in &#8221; &#8220;, you are telling Google to match that term <em>exactly</em>. This is
+useful, because it means I can take pieces of my Japanese sentence above, and
+see how many times that exact phrase has been used before.</p>
+
+<p>Okay, so first example: I&#8217;m not sure about the 数年振りでも phrase. Makes sense in
+my head, but who knows, right? So here&#8217;s what I get when I google for that
+exact phrase:</p>
+
+<p><img src="http://media.tumblr.com/tumblr_mei8wltmHQ1qeiyu3.jpg" alt="" /></p>
+
+<p>172 million hits! If you google the same thing, you&#8217;ll probably get a
+different result (because Google just kind of fakes these numbers, I think),
+but the important thing is I can see my phrase used in context right from the
+Google search results page:</p>
+
+<ul>
+<li>数年振りでも変わらず</li>
+<li>数年振りでも変わらぬ空気</li>
+</ul>
+
+
+<p>So I&#8217;m feeling a bit more confident in this phrase. What else? Well, the
+Xちゃんは僕の心に親しむ友達と思えたよ is an obvious candidate. There&#8217;s lots here I&#8217;m not sure
+about, including the use of は, the 心に親しむ友達 and whether I want to be using 思えた
+form of 思う (the use of the potential form of 思う is something I haven&#8217;t wrapped
+my head around yet).</p>
+
+<p>But just googling &#8220;Xちゃんは僕の心に親しむ友達と思えたよ&#8221; brings back no results (not
+surprisingly!). So what you have to do is trim it down to sub phrases. This
+gets easier with a bit of practice.</p>
+
+<p>I look up 親しむ in my dictionary (you still need the old toolbox handy!) and I
+see that I&#8217;m being reckless with my particles. So forgetting about the 心 bit
+for now, I google &#8220;親しむ友達&#8221; and google shows me the results for ”親しい友達&#8221; instead.
+Neato!</p>
+
+<p><strong>SIDE NOTE:</strong> Most of these results seem to come from facebook pages, but when I google:</p>
+
+<blockquote><p>&#8220;親しい友達&#8221; -facebook</p></blockquote>
+
+<p>I still get a lot of results. I also get results for &#8220;心から親しい友達&#8221;</p>
+
+<p>Looking up 思える in the dictionary, it seems like it&#8217;s actually a different verb
+from 思う with a different usage pattern (なるほどね). So now I can google
+&#8220;親しい友達に思えた&#8221; and &#8220;親しい友達のように思えた&#8221; and since the latter gets a hit, I&#8217;m leaning
+towards that. I also try 思える instead of 思えた and I get a few more results and
+I&#8217;m thinking that&#8217;s probably what I want.</p>
+
+<p>I think that&#8217;s enough to illustrate the idea. After a bit more googling, I
+finally settle on this:</p>
+
+<blockquote><p>この間、日本で会ってくれて、本当に嬉しかったよ。数年振りでも、相変わらずXちゃんと話ができたり、楽しく遊んだりできて、やっぱり、Xちゃんは心から親しい友
+達のように思える！</p></blockquote>
+
+<p>Now, this probably still has errors. That&#8217;s not really the point. The point is
+that it has gotten better than my original attempt! This may all seem arduous,
+but in reality, it goes quickly once you&#8217;ve got the hang of it. Depending on
+how important the writing is, you can spend more or less time doing this.
+Plus, it&#8217;s a good way to learn!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Kanji stroke orders in Anki!]]></title>
+    <link href="http://zakvdm.org/blog/2012/11/05/kanji-stroke-order-diagrams/"/>
+    <updated>2012-11-05T00:00:00+02:00</updated>
+    <id>http://zakvdm.org/blog/2012/11/05/kanji-stroke-order-diagrams</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://zakvdm.org/images/posts/2012-11-05-kanji-stroke-order-diagrams-1-400.jpg" width="250"></p>
+
+<p>Just a quick note for anyone studying kanji (especially if you&#8217;re doing a variant of heisig). You can download a font which includes stroke orders <a href="http://www.nihilist.org.uk/">here</a>.</p>
+
+<p>With a simple change to my Anki model, all my kanji cards now include stroke order diagrams. Nice!</p>
+
+<p>If you&#8217;re curious, here&#8217;s how I changed the card:</p>
+
+<h3>Back Template</h3>
+
+<p>Include something like:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">&quot;kanji&quot;</span><span class="nt">&gt;</span><span class="nt">&lt;/span&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Styling</h3>
+
+<p>Include the following css:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='css'><span class='line'><span class="nc">.kanji</span> <span class="p">{</span>
+</span><span class='line'>  <span class="k">font-family</span><span class="o">:</span> <span class="n">KanjiStrokeOrders</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">font-size</span><span class="o">:</span> <span class="m">150px</span><span class="p">;</span>
+</span><span class='line'>  <span class="k">color</span><span class="o">:</span> <span class="m">#e56727</span><span class="p">;</span>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This is for Anki 2.0 by the way, but you could do something similar with
+earlier versions. The only really critical part is setting the font-family to
+KanjiStrokeOrders.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Haruki Murakami's short stories - TV People]]></title>
+    <link href="http://zakvdm.org/blog/2012/09/19/haruki-murakamis-short-stories---tv-people/"/>
+    <updated>2012-09-19T00:00:00+02:00</updated>
+    <id>http://zakvdm.org/blog/2012/09/19/haruki-murakamis-short-stories&#8212;tv-people</id>
+    <content type="html"><![CDATA[<p>I&#8217;m finally getting to the point where I can start to read a bit of Japanese.
+That is, I can follow the gist of what I read without constant interruption to
+look up words and kanji. Actually, I&#8217;ve been actively resisting using the
+dictionary. That&#8217;s just not how I read English when I was a kid; and that&#8217;s
+not fun and not the way to stay motivated!</p>
+
+<p>I&#8217;ve been reading short stories by Haruki Murakami. I&#8217;ve got two of his short
+story collections, <em>Blind Willow, Sleeping Woman</em> and <em>The Elephant Vanishes</em>.
+At first I went through and read all the super short stories. Ten pages or
+less was my rule. I find that I can get through these in a single sitting.
+They&#8217;re a nice size, but the stories aren&#8217;t all that satisfying. Usually no
+real plot or character development. What do you expect in 10 pages, right?</p>
+
+<!-- more -->
+
+
+<p><em>TV People</em> was the first Murakami story published in the New Yorker. I
+usually enjoy me a good New Yorker short story, so I was curious to see what a
+Murakami New Yorker story looks like. <em>TV People</em> is more satisfying than the
+super short stories I&#8217;ve been reading. There&#8217;s (a bit of) a plot, and you get
+to spend some time with the protagonist. Honestly though, I don&#8217;t like it. I
+don&#8217;t understand it, is another way to word it. To me this story is just a
+vague ennui / apathy metaphor blah blah blah. In reading through these
+Murakami stories, the cover of my childhood copy of <em>The Emperor&#8217;s New
+Clothes</em> flashes into my head over and over. Presumably the clever people at
+the New Yorker know something that I don&#8217;t, and there really is a <em>there</em>
+there in there somewhere, but beats me if I can find it.</p>
+
+<p>On the upside, Murakami is great for students of Japanese (like me!). It&#8217;s so
+accessible, it can give you a false sense of confidence. I sometimes go
+paragraphs and paragraphs knowing every word, feeling really good about my
+Japanese. That is, until I pick up a newspaper or even a tricky children&#8217;s
+book. There were a few passages in <em>TV People</em> that I found tricky, but most
+of it was straightforward.</p>
+
+<p>Reading Alfred Birnbaum&#8217;s translation of <em>TV People</em> from the New Yorker, you
+really get a sense of how simple the language is. I almost feel as if, in
+translating Murakami into English, the translator needs to doll up the prose a
+bit to make it feel natural. But hey, I&#8217;m the one who thinks everyone&#8217;s naked
+here, so I would say that…</p>
+
+<p>If you&#8217;re just starting to read Murakami, then there are two kanji you should
+know. Murakami <em>loves</em> these kanji!</p>
+
+<h3>訊</h3>
+
+<p>訊く・訊ねる is just a fancy way of writing 聞く・ 尋ねる (kiku and tazuneru). There&#8217;s
+probably some nuance I&#8217;m missing here, but anyway, you&#8217;ll see this character
+used over and over so best get used to it.</p>
+
+<h3>眺</h3>
+
+<p>Murakami&#8217;s characters love to 眺める (nagameru - stare/gaze). This one is
+actually a standard use kanji, but I didn&#8217;t know it until I started reading
+Murakami.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Using your own domain with Google App Engine]]></title>
+    <link href="http://zakvdm.org/blog/2012/08/30/using-your-own-domain-with-google-app-engine/"/>
+    <updated>2012-08-30T11:52:00+02:00</updated>
+    <id>http://zakvdm.org/blog/2012/08/30/using-your-own-domain-with-google-app-engine</id>
+    <content type="html"><![CDATA[<p>I&#8217;ve just lost too many hours trying to get Infinite Loop to work from my own domain: http://infiniteloop.zakvdm.org</p>
+
+<p>The secret is to follow the instructions on this page: https://developers.google.com/appengine/docs/domain</p>
+
+<p><strong>BUT!</strong> When you get to the section on CNAME records, the instructions will tell you to create a CNAME record that points to &#8220;ghs.googlehosted.com&#8221;. This is a lie! If you point to &#8220;ghs.google.com&#8221; instead, then things magically work.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Words I should know but don't: pregnant]]></title>
+    <link href="http://zakvdm.org/blog/2011/01/10/words-i-should-know-but-dont-pregnant/"/>
+    <updated>2011-01-10T00:00:00+02:00</updated>
+    <id>http://zakvdm.org/blog/2011/01/10/words-i-should-know-but-dont-pregnant</id>
+    <content type="html"><![CDATA[<p>No back story, just realised today that I don&#8217;t know this word. Here goes:</p>
+
+<p><strong>妊娠</strong>(ninshin) - <strong>conception</strong></p>
+
+<blockquote><ul>
+<li>彼女は妊娠したので、健康のことを考えてタバコをやめた。</li>
+<li>妊娠している</li>
+</ul>
+</blockquote>
+
+<!-- more -->
+
+
+<p>That&#8217;s easy enough, but there seem to be a plenitude of other pregnancy
+related vocab:</p>
+
+<blockquote><ul>
+<li>身重(miomo) - pregnant (kanji: body + heavy)</li>
+<li>妊娠 - conception, example: 彼女は妊娠したので、健康のことを考えてタバコをやめた。</li>
+<li>妊婦 - pregnant woman</li>
+<li>みごもる - to become pregnant (with various kanji I don&#8217;t know)</li>
+<li>宿る - to become pregnant (also has other, more commonly used, meanings)</li>
+<li>孕む - to conceive / become pregnant</li>
+</ul>
+</blockquote>
+
+<p>The list goes on. Phew! I still don&#8217;t know which one to use. This has long
+been a problem for me with Japanese: the dictionaries just don&#8217;t get me quite
+far enough. I have had the same kinds of problems with &#8220;give birth.&#8221; Just
+knowing 生む doesn&#8217;t mean you can use it right. And looking for an example, I
+come across this:</p>
+
+<blockquote><p>彼女に赤ちゃんが生まれる</p>
+
+<p> She is going to have a baby.</p></blockquote>
+
+<p>Which may just be the best way to say &#8220;pregnant&#8221; after all.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[新年の誓い]]></title>
+    <link href="http://zakvdm.org/blog/2011/01/01/resolutions/"/>
+    <updated>2011-01-01T00:00:00+02:00</updated>
+    <id>http://zakvdm.org/blog/2011/01/01/resolutions</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://media.tumblr.com/tumblr_lecw5iqAsG1qeiyu3.jpg" width="300"></p>
+
+<p>I never used to be one for making New Year&#8217;s resolutions, but last year I made
+some and now it&#8217;s time to be held accountable. I made 2 resolutions:</p>
+
+<ul>
+<li>Learn the 常用漢字</li>
+<li>Do 100 Project Euler problems</li>
+</ul>
+
+
+<!-- more -->
+
+
+<p>So how did I do? I got through 1098 kanji and up to problem 63 on Project
+Euler. So I failed at both. But I don&#8217;t <em>feel</em> like a failure! I was to a
+thousand kanji around June when I realised that I was starting to know almost
+every character that I saw reading newspaper articles during my lessons. This
+is because I learnt the characters by frequency of use, and the 1000 most
+frequently used kanji go a remarkably long way. So I stopped learning new
+kanji and worked on vocabulary and reading. The point is, I suppose, that I
+got what I wanted from the resolution, even if I didn&#8217;t know what I wanted
+exactly up front. (Project Euler is another story for another blog…)</p>
+
+<hr />
+
+<p>This year, there won&#8217;t be any Japanese learning resolutions. I figure I&#8217;m in
+the habit of studying anyway… Instead I am going to try to write a little
+every day (be it on this blog or elsewhere). Oddly, I know from experience
+that this is something I find hard to do.</p>
+
+<hr />
+
+<p><em>Side note:</em> I had a bit of a tricky time finding the Japanese for <strong>New
+Year&#8217;s resolution</strong> for this post title. It can be hard to look up phrases in
+a dictionary, so in the end I resorted to <a href="http://translate.%0Agoogle.co.za/translate_t?q=new%20years%20resolution&amp;um=1&amp;ie=UTF-8&amp;sa=N&amp;hl=en&amp;t%0Aab=wT#auto%7Cja%7Cnew%20years%20resolution">google translate</a> and got the right answer.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[～とは限らない]]></title>
+    <link href="http://zakvdm.org/blog/2010/12/30/grammar-tohakagiranai/"/>
+    <updated>2010-12-30T00:00:00+02:00</updated>
+    <id>http://zakvdm.org/blog/2010/12/30/grammar-tohakagiranai</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://media.tumblr.com/tumblr_le99gmATgM1qeiyu3.jpg" width="250"></p>
+
+<p>This is a handy bit of grammar that means something like &#8220;it&#8217;s not always the
+case that ~.&#8221;</p>
+
+<p>It seems like you use it when you want to point out to someone that a certain
+expectation is not certain. For example:</p>
+
+<blockquote><p>あなたは結婚するつもりでも、相手がその気になっている<strong>とは限らない</strong>じゃありませんか</p>
+
+<p>You might be planning to get married, but that doesn&#8217;t necessarily mean that
+your partner will feel the same, right?</p></blockquote>
+
+<hr />
+
+<p>On a side note, I used the Japanese dictionary
+<a href="http://dictionary.goo.ne.jp/leaf/thsrs/17327/m0u/">goo</a> to try and get a
+better idea of the specific usage. My Japanese is on the cusp of good enough
+to use straight Japanese-Japanese dictionaries. In the meantime, I learn quite
+a bit by trying to use them, :).</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Film Review: 時をかける少女]]></title>
+    <link href="http://zakvdm.org/blog/2010/12/21/film-review-the-girl-who-lept-through-time/"/>
+    <updated>2010-12-21T00:00:00+02:00</updated>
+    <id>http://zakvdm.org/blog/2010/12/21/film-review-the-girl-who-lept-through-time</id>
+    <content type="html"><![CDATA[<p><img class="right" src="http://media.tumblr.com/tumblr_ldspywDDrl1qeiyu3.jpg" width="250">
+I&#8217;ve been trying to watch more Japanese films lately. It&#8217;s a good way to relax and &#8220;study&#8221; all at once.</p>
+
+<p>時をかける少女 (rendered in English as <em>The Girl Who Leapt Through Time</em>) was shown at the Cape Town Japanese film festival a few months ago but I missed it. I heard it was good though and so luckily I was able to watch it at home.</p>
+
+<p>It is indeed <em>good!</em></p>
+
+<!-- more -->
+
+
+<p>The basic plot is simple: a girl learns how to time travel and uses that for her own amusement. Despite this familiar premise, the film keeps you guessing.  In some ways the form of the film begins to mimic the action on screen&#8211;scenes are repeated, things are reworked, time is squashed and stretched. Despite its sci-fi premise, most of the film takes place in a high school. I spent 2 years teaching in a Japanese high school, and the film&#8217;s high school felt alive and familiar (another Japanese film I saw recently, <em>Linda Linda</em>, captured Japanese high schools equally well).</p>
+
+<p>The main character, a girl of about 16, is just lovely. In many ways ordinary, she is headstrong, assertive and supremely likeable. She carries the film along in a whimsy that makes the implausible plausible, or at least <em>fun</em>.</p>
+
+<p>At some point the time travel plot unravels (as they all must) and I found myself wishing the ending had come sooner (there were many melancholy moments that felt like endings of sorts). <em>Good</em> flick though. Recommended.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[累 vs 細 - The Movie Method]]></title>
+    <link href="http://zakvdm.org/blog/2010/12/20/dealing-with-similar-kanji-the-movie-method/"/>
+    <updated>2010-12-20T00:00:00+02:00</updated>
+    <id>http://zakvdm.org/blog/2010/12/20/dealing-with-similar-kanji-the-movie-method</id>
+    <content type="html"><![CDATA[<p>After <a href="http://ankisrs.net/">Anki</a>, the best thing to happen to my Japanese is
+the <a href="http://drmoviemethod.blogspot.com/">Movie Method</a>. Once kanji stopped
+being intimidating and began to feel like a tool, Japanese really started to
+&#8220;click.&#8221; But as much as I love the Movie Method, it does have its occasional
+quirks.</p>
+
+<!-- more -->
+
+
+<p>Yesterday I was reading something and saw this character: 累. I thought, &#8220;okay,
+<strong>brain </strong>and <strong>camera</strong> (these are my components for 田 and 糸 respectively)…
+That gives me &#8216;dainty&#8217; (duly remembering the scene I chose from 花より団子).&#8221;
+Great! Except… I was completely wrong! I had confused 細 for 累.</p>
+
+<p>So how do you handle this situation with the Movie Method?</p>
+
+<p><img class="left" src="http://media.tumblr.com/tumblr_ldqld9z9mU1qeiyu3.jpg"></p>
+
+<p>I already have a scene for 細, so now I want to learn 累. The natural thing to
+do is to build on what I already know. The natural thing is <em>wrong!</em> If I
+create a scene with, say, a <strong>brain</strong> on top of a <strong>camera</strong>, I <em>will</em> get
+confused. A month from now when I see the character, I&#8217;ll only remember
+<strong>brain</strong> and <strong>camera</strong>, and I won&#8217;t remember the nuanced difference between
+a &#8220;brain <strong>and</strong> camera&#8221; vs. a &#8220;brain<strong> on </strong>camera.&#8221; Instead, I&#8217;m going to
+choose a completely different component to use to remember this new kanji.
+Brain on camera kind of makes me think of one of those <strong>War of the Worlds</strong>
+machines, so I&#8217;m going to choose this as my component for 累.</p>
+
+<p>Okay, so now you&#8217;re probably thinking this is dumb because I&#8217;ve just created a
+new component which is the same as the whole kanji anyway. This is true, but
+it is worth it! It&#8217;ll be easier for me to keep these 2 similar-looking kanji
+separate (this is especially true when I&#8217;m trying to write the character from
+memory). <strong>And</strong> if there&#8217;s ever another kanji that uses this new component
+(and there always is!) then I&#8217;ve already done the ground work and it&#8217;ll be
+easy to learn. It scales.</p>
+
+<p>This is a long post about something that feels quite pedantic, even to me. But
+I think it&#8217;s something which is both unintuitive and critical to making
+heisig/movie method work.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Book Review: A Hundred Years of Japanese Film [Donald Richie]]]></title>
+    <link href="http://zakvdm.org/blog/2010/12/18/book-review-a-hundred-years-of-japanese-film-donald-richie/"/>
+    <updated>2010-12-18T00:00:00+02:00</updated>
+    <id>http://zakvdm.org/blog/2010/12/18/book-review-a-hundred-years-of-japanese-film-donald-richie</id>
+    <content type="html"><![CDATA[<p><img class="left" src="http://media.tumblr.com/tumblr_ldj4t2bpdw1qeiyu3.jpg" title="&#34;I prefer the old edition's g&#34;" alt="&#34;I prefer the old edition's g&#34;"></p>
+
+<p>This book straddles the line between a history and reference book. The early sections tend towards the historical&#8211;they describe how Japan accepted cinema and made the transition from traditional entertainments (kabuki and the like) to film. The later sections lose the overarching narrative and begin to read like a laundry list of recent noteworthy Japanese films and directors. There are short sections devoted to Anime and Japanese documentary, but they lack the insight and entertainment value of the first few chapters. Maybe that&#8217;s just the material that Richie was dealing with: a film industry in decline, becoming ever more diffuse and hard to define.</p>
+
+<!-- more -->
+
+
+<p>Richie seems a true connoisseur of Japanese film&#8211;he talks of Kurosawa and Ozu in a doting whisper that had me watching Rashomon with a new-found appreciation. But it is precisely his stewardship of Japanese Film that harms the second half of the book. He talks of the influence of Anime and thus can&#8217;t dismiss it, but it also seems as if he has been left untouched by this influence. If I could have it all my own way, I&#8217;d have had Richie focus on the &#8220;golden&#8221; era of Japanese film (call it, say &#8220;Fifty Years of Japanese Film&#8221;). That would have played to his considerable strengths quite nicely.</p>
+
+<p>As for the Japanese student, this book won&#8217;t improve your Japanese directly. At best, you can hope to discover some Japanese films you wouldn&#8217;t have watched otherwise. Richie uses the English names of all the films but includes the Japanese name in brackets. I often wished that he had included the name written in Japanese (and not just romaji) so that I could see the kanji, but that&#8217;s probably asking too much.</p>
+
+<p>If you&#8217;re unsure, try google books. It seems like you can read almost the whole thing online. There is a more comprehensive, informed review
+<a href="http://www.sensesofcinema.com/2002/book-reviews/hundred_japanese/">here</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[~てからでないと]]></title>
+    <link href="http://zakvdm.org/blog/2010/12/16/tekaradenaito/"/>
+    <updated>2010-12-16T00:00:00+02:00</updated>
+    <id>http://zakvdm.org/blog/2010/12/16/tekaradenaito</id>
+    <content type="html"><![CDATA[<p>This bit of grammar seems quite useful. I picked it up from <a href="(http://www.japanesepod101.com/)">japanesepod101.com</a>&#8217;s upper intermediate 3rd season. It&#8217;s a way of stating a prerequisite to avoid some negative outcome. <a href="(http://www.amazon.co.jp/%E3%81%A9%E3%82%93%E3%81%AA%E6%99%82%E3%81%A9%E3%81%86%E4%BD%BF%E3%81%86-%E6%97%A5%E6%9C%AC%E8%AA%9E%E8%A1%A8%E7%8F%BE%E6%96%87%E5%9E%8B500%E2%80%95%E6%97%A5%E6%9C%AC%E8%AA%9E%E8%83%BD%E5%8A%9B%E8%A9%A6%E9%A8%931%E3%83%BB2%E7%B4%9A%E5%AF%BE%E5%BF%9C-%E3%82%A2%E3%83%AB%E3%82%AF%E3%81%AE%E6%97%A5%E6%9C%AC%E8%AA%9E%E3%83%86%E3%82%AD%E3%82%B9%E3%83%88-%E5%8F%8B%E6%9D%BE-%E6%82%A6%E5%AD%90/dp/4872345894)">どんな時どう使う日本語</a> provides the following illustrative example sentence:</p>
+
+<blockquote><p>野菜を生で食べるなら、よく洗ってからでないと、農薬が心配だ。</p>
+
+<p>When eating raw vegetables, if you don&#8217;t wash them properly first then
+pesticides are a concern.</p></blockquote>
+
+<p><img src="http://media.tumblr.com/tumblr_ldivupTqpQ1qeiyu3.jpg" alt="" /></p>
+
+<p>Breaking it down a little:</p>
+
+<p>~てから means &#8220;after ~ [verb in て form].</p>
+
+<p>でないと means &#8220;if not,&#8221; so all together it&#8217;s something like: &#8220;if not after ~&#8221;
+followed by some negative verb or unwanted result.</p>
+
+<p>With that, I can make my own example:</p>
+
+<p>この文法ポイントを勉強してからでないと、二級を合格できない！</p>
+]]></content>
+  </entry>
   
 </feed>

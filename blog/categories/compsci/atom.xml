@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: CompSci | The Izakaya]]></title>
+  <link href="http://zakvdm.org/blog/categories/compsci/atom.xml" rel="self"/>
+  <link href="http://zakvdm.org/"/>
+  <updated>2013-02-03T14:33:31+02:00</updated>
+  <id>http://zakvdm.org/</id>
+  <author>
+    <name><![CDATA[Zak van der Merwe]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Using your own domain with Google App Engine]]></title>
+    <link href="http://zakvdm.org/blog/2012/08/30/using-your-own-domain-with-google-app-engine/"/>
+    <updated>2012-08-30T11:52:00+02:00</updated>
+    <id>http://zakvdm.org/blog/2012/08/30/using-your-own-domain-with-google-app-engine</id>
+    <content type="html"><![CDATA[<p>I've just lost too many hours trying to get Infinite Loop to work from my own domain: http://infiniteloop.zakvdm.org</p>
+
+<p>The secret is to follow the instructions on this page: https://developers.google.com/appengine/docs/domain</p>
+
+<p><strong>BUT!</strong> When you get to the section on CNAME records, the instructions will tell you to create a CNAME record that points to "ghs.googlehosted.com". This is a lie! If you point to "ghs.google.com" instead, then things magically work.</p>
+]]></content>
+  </entry>
+  
+</feed>

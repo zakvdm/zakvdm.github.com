@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://zakvdm.github.com/sitemap.xml 
+Sitemap: http://zakvdm.org/sitemap.xml 
