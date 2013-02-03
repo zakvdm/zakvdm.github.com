@@ -4,6 +4,7 @@ title: Dirty tricks for writing better Japanese
 tags:
 - writing
 - japanese
+categories: Japanese
 ---
 Here's a nifty trick I've been using when writing Japanese emails, etc. Like
 so many things, it uses the power of Google and is best explained by example.

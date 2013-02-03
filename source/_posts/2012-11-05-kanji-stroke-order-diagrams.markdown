@@ -6,6 +6,7 @@ tags:
 - MovieMethod
 - study methods
 - anki
+categories: Japanese
 ---
 {% img right /images/posts/2012-11-05-kanji-stroke-order-diagrams-1-400.jpg 250 %}
 
