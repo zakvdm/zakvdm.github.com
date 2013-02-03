@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Android | zakvdm.org]]></title>
+  <link href="http://zakvdm.org/blog/categories/android/atom.xml" rel="self"/>
+  <link href="http://zakvdm.org/"/>
+  <updated>2013-02-03T18:22:18+02:00</updated>
+  <id>http://zakvdm.org/</id>
+  <author>
+    <name><![CDATA[Zak van der Merwe]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[More space for apps on your Nexus One]]></title>
+    <link href="http://zakvdm.org/blog/2013/02/03/more-space-for-apps-on-your-nexus-one/"/>
+    <updated>2013-02-03T18:09:00+02:00</updated>
+    <id>http://zakvdm.org/blog/2013/02/03/more-space-for-apps-on-your-nexus-one</id>
+    <content type="html"><![CDATA[<p>I still love my Nexus One after all these years, but when I run out of space for new apps, I often feel like weeping.</p>
+
+<p>Here's a handy trick if you're desperate for a few more MBs:</p>
+
+<blockquote><ul>
+<li>Pick an app you use a lot. Google maps is a good candidate.</li>
+<li>Find the app in the Manage Apps menu, and click "Uninstall Updates" (bear with me here!).</li>
+<li>Now find the same app in the Google Play store and upgrade it back to the newest version.</li>
+</ul>
+</blockquote>
+
+<p>This is totally unintuitive but it works. I freed up 13MBs doing this with Google Maps. What decadence!  I'm guessing it works because the apps keep data related to each update lying around (maybe for rollbacks?).</p>
+
+<p>I suspect these tricks will work just as well for HTC Desire owners, and presumably for anyone else fighting the good fight against app bloat.</p>
+
+<p><strong>PS.</strong> I ordered a Nexus 4 yesterday so my Nexus One will go into a well-deserved retirement soon. It has given me 3 years of good service and honestly, it changed the way I see the world in ways that feel deep and permanent.</p>
+]]></content>
+  </entry>
+  
+</feed>
