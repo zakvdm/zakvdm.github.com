@@ -43,7 +43,7 @@ Okay, so first example: I'm not sure about the 数年振りでも phrase. Makes 
 my head, but who knows, right? So here's what I get when I google for that
 exact phrase:
 
-![](http://media.tumblr.com/tumblr_mei8wltmHQ1qeiyu3.jpg)
+![](/images/posts/2012-12-04-dirty-tricks-for-writing-better-japanese.jpg)
 
 172 million hits! If you google the same thing, you'll probably get a
 different result (because Google just kind of fakes these numbers, I think),

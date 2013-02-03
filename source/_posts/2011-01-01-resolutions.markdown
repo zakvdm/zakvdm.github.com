@@ -5,7 +5,7 @@ tags:
 - study methods
 categories: Japanese
 ---
-{% img right http://media.tumblr.com/tumblr_lecw5iqAsG1qeiyu3.jpg 300 %}
+{% img right /images/posts/2011-01-01-resolutions.jpg 300 %}
 
 I never used to be one for making New Year's resolutions, but last year I made
 some and now it's time to be held accountable. I made 2 resolutions:

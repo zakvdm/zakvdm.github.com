@@ -13,7 +13,7 @@ This bit of grammar seems quite useful. I picked it up from [japanesepod101.com]
 > When eating raw vegetables, if you don't wash them properly first then
 pesticides are a concern.
 
-![](http://media.tumblr.com/tumblr_ldivupTqpQ1qeiyu3.jpg)
+![](/images/posts/2010-12-16-tekaradenaito.jpg)
 
 Breaking it down a little:
 

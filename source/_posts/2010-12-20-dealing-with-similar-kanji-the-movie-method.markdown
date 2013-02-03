@@ -21,7 +21,7 @@ Great! Except… I was completely wrong! I had confused 細 for 累.
 
 So how do you handle this situation with the Movie Method?
 
-{% img left http://media.tumblr.com/tumblr_ldqld9z9mU1qeiyu3.jpg %}
+{% img left /images/posts/2010-12-20-dealing-with-similar-kanji-the-movie-method.jpg %}
 
 I already have a scene for 細, so now I want to learn 累. The natural thing to
 do is to build on what I already know. The natural thing is _wrong!_ If I

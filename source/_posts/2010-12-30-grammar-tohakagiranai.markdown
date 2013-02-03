@@ -5,7 +5,7 @@ tags:
 - grammar
 categories: Japanese
 ---
-{% img right http://media.tumblr.com/tumblr_le99gmATgM1qeiyu3.jpg 250 %}
+{% img right /images/posts/2010-12-30-grammar-tohakagiranai.jpg 250 %}
 
 This is a handy bit of grammar that means something like "it's not always the
 case that ~."

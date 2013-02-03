@@ -7,7 +7,7 @@ tags:
 - anime
 categories: Japanese
 ---
-{% img right http://media.tumblr.com/tumblr_ldspywDDrl1qeiyu3.jpg 250 %}
+{% img right /images/posts/2010-12-21-film-review-the-girl-who-lept-through-time.jpg 250 %}
 I've been trying to watch more Japanese films lately. It's a good way to relax and "study" all at once.
 
 時をかける少女 (rendered in English as _The Girl Who Leapt Through Time_) was shown at the Cape Town Japanese film festival a few months ago but I missed it. I heard it was good though and so luckily I was able to watch it at home.
