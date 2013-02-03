@@ -6,6 +6,7 @@ tags:
 - film
 - anime
 categories: Japanese
+comments: true
 ---
 {% img right /images/posts/2010-12-21-film-review-the-girl-who-lept-through-time.jpg 250 %}
 I've been trying to watch more Japanese films lately. It's a good way to relax and "study" all at once.

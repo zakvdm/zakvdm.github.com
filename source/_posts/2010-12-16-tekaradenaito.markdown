@@ -5,6 +5,7 @@ tags:
 - grammar
 - 二級
 categories: Japanese
+comments: true
 ---
 This bit of grammar seems quite useful. I picked it up from [japanesepod101.com][1]'s upper intermediate 3rd season. It's a way of stating a prerequisite to avoid some negative outcome. [どんな時どう使う日本語][2] provides the following illustrative example sentence:
 

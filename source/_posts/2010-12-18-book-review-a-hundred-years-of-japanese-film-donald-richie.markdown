@@ -1,11 +1,12 @@
 ---
 layout: post
-title: ! 'Book Review: A Hundred Years of Japanese Film [Donald Richie]'
+title: 'Book Review: A Hundred Years of Japanese Film [Donald Richie]'
 tags:
 - review
 - book
 - film
 categories: Japanese
+comments: true
 ---
 {% img left /images/posts/2010-12-18-book-review-a-hundred-years-of-japanese-film-donald-richie.jpg "I prefer the old edition's g" %}
 
