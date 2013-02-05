@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Books | zakvdm.org]]></title>
+  <link href="http://zakvdm.org/blog/categories/books/atom.xml" rel="self"/>
+  <link href="http://zakvdm.org/"/>
+  <updated>2013-02-05T22:31:01+02:00</updated>
+  <id>http://zakvdm.org/</id>
+  <author>
+    <name><![CDATA[Zak van der Merwe]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Book Review: Coders at Work - Peter Seibel]]></title>
+    <link href="http://zakvdm.org/blog/2010/05/11/coders-at-work-peter-seibel/"/>
+    <updated>2010-05-11T20:25:03+02:00</updated>
+    <id>http://zakvdm.org/blog/2010/05/11/coders-at-work-peter-seibel</id>
+    <content type="html"><![CDATA[<p>I started this on a plane on a whim, never expecting to finish it (it's <em>long</em>). Yet I did finish it, and for the last month, it's been consistently the thing I want to read most when I crawl into bed. You could read 1 or 2 of the interviews in isolation and not lose that much. In fact, there's a lot of repitition: the same questions, similar answers, similar opinions. And yet, I'd say read it all, there is so much to be gleaned from the small differences of opinion, and there is an unquestionable common strand that ties the book together: a vision of what it is to be a programmer; a prediction for the future; a praise song for what's come before and a fondness for the discipline that sometimes was so infectious that I had to put the book down and go tap in some code of my own.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Book Review: Test Driven Development - Kent Beck]]></title>
+    <link href="http://zakvdm.org/blog/2010/02/22/test-driven-development-kent-beck/"/>
+    <updated>2010-02-22T20:13:43+02:00</updated>
+    <id>http://zakvdm.org/blog/2010/02/22/test-driven-development-kent-beck</id>
+    <content type="html"><![CDATA[<p>I don't find much to recommend about this book. The second half is better, but the examples of the first half are simply not compelling. TDD has a place, and it's a tool I want to use, but this is not the book that will either convince or teach you about TDD.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Book Review: The Fantastic Mr. Fox - Roald Dahl]]></title>
+    <link href="http://zakvdm.org/blog/2010/02/14/the-fantastic-mr-fox-roald-dahl/"/>
+    <updated>2010-02-14T20:08:26+02:00</updated>
+    <id>http://zakvdm.org/blog/2010/02/14/the-fantastic-mr-fox-roald-dahl</id>
+    <content type="html"><![CDATA[<p>I'm not sure how I missed this growing up, but it's odd and wonderful. But it's also troubling: the crass socialism, the poor farmers, the silliness of always digging down, but Mr. Fox <em>is</em> fantastic, and the fact that he <em>knows</em> he's fantastic and works hard at it makes it all so much funnier.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Book Review: Life & Times of Michael K - J.M. Coetzee]]></title>
+    <link href="http://zakvdm.org/blog/2010/01/17/life-times-of-michael-k-j-m-coetzee/"/>
+    <updated>2010-01-17T23:16:50+02:00</updated>
+    <id>http://zakvdm.org/blog/2010/01/17/life-times-of-michael-k-j-m-coetzee</id>
+    <content type="html"><![CDATA[<p>I think it starts quite beautifully. Small and convincing, a poor man and his mother trying to leave Cape Town and escape to a nostalgic countryside. The details of the war are woven in so subtly, I was immersed.</p>
+
+<p>Part 2 I don't know what to make of: Michael leaves behind his mother, escapes into the wilderness, is captured, escapes again, grows pumpkins, slowly withers away until he is stripped of humanity and disappears in abstract ideas which I couldn't quite grasp or follow - I was empty at the end.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Book Review: SuperFreakonomics - S. Levitt & Dubner]]></title>
+    <link href="http://zakvdm.org/blog/2009/12/27/superfreakonomics-s-levitt-dubner/"/>
+    <updated>2009-12-27T15:55:13+02:00</updated>
+    <id>http://zakvdm.org/blog/2009/12/27/superfreakonomics-s-levitt-dubner</id>
+    <content type="html"><![CDATA[<p>f you skip chapter 5 (the global warming chapter) then you have one of the most entertaining books I've read in a <em>long</em> time. If you include chapter 5 then you have, well, a controversial book about global warming.</p>
+
+<p><strong>Without Chapter 5:</strong>
+This book is crammed with juicy statistics and outrageous facts. The writing is snappier and cheekier than <em>Freakonomics</em>. The book is a bit like a rough pencil sketch: Dubner and Levitt seem to realize that it works better if not every detail is rendered perfectly. It signals to readers: fill in the details for yourself, not everything here is perfect, not everything here is true, <strong>see</strong> it for yourself.</p>
+
+<p><strong>With Chapter 5:</strong>
+Well, I liked chapter 5. It's point of view is consistent with the rest of the book: people respond to incentives and don't like to change their behaviour. If you accept that as your premise, geo-engineering starts to seem inevitable. Unseemly lifeboat that it is, I'll take their argument that we should think more about what the lifeboat would look like, and build the best damn lifeboat we can...you know...in case Al Gore fails.</p>
+]]></content>
+  </entry>
+  
+</feed>

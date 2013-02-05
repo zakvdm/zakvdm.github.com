@@ -4,7 +4,7 @@
   <title><![CDATA[Category: CompSci | zakvdm.org]]></title>
   <link href="http://zakvdm.org/blog/categories/compsci/atom.xml" rel="self"/>
   <link href="http://zakvdm.org/"/>
-  <updated>2013-02-03T18:40:12+02:00</updated>
+  <updated>2013-02-05T22:31:01+02:00</updated>
   <id>http://zakvdm.org/</id>
   <author>
     <name><![CDATA[Zak van der Merwe]]></name>
@@ -23,6 +23,24 @@
 <p>The secret is to follow the instructions on this page: https://developers.google.com/appengine/docs/domain</p>
 
 <p><strong>BUT!</strong> When you get to the section on CNAME records, the instructions will tell you to create a CNAME record that points to "ghs.googlehosted.com". This is a lie! If you point to "ghs.google.com" instead, then things magically work.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Book Review: Coders at Work - Peter Seibel]]></title>
+    <link href="http://zakvdm.org/blog/2010/05/11/coders-at-work-peter-seibel/"/>
+    <updated>2010-05-11T20:25:03+02:00</updated>
+    <id>http://zakvdm.org/blog/2010/05/11/coders-at-work-peter-seibel</id>
+    <content type="html"><![CDATA[<p>I started this on a plane on a whim, never expecting to finish it (it's <em>long</em>). Yet I did finish it, and for the last month, it's been consistently the thing I want to read most when I crawl into bed. You could read 1 or 2 of the interviews in isolation and not lose that much. In fact, there's a lot of repitition: the same questions, similar answers, similar opinions. And yet, I'd say read it all, there is so much to be gleaned from the small differences of opinion, and there is an unquestionable common strand that ties the book together: a vision of what it is to be a programmer; a prediction for the future; a praise song for what's come before and a fondness for the discipline that sometimes was so infectious that I had to put the book down and go tap in some code of my own.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Book Review: Test Driven Development - Kent Beck]]></title>
+    <link href="http://zakvdm.org/blog/2010/02/22/test-driven-development-kent-beck/"/>
+    <updated>2010-02-22T20:13:43+02:00</updated>
+    <id>http://zakvdm.org/blog/2010/02/22/test-driven-development-kent-beck</id>
+    <content type="html"><![CDATA[<p>I don't find much to recommend about this book. The second half is better, but the examples of the first half are simply not compelling. TDD has a place, and it's a tool I want to use, but this is not the book that will either convince or teach you about TDD.</p>
 ]]></content>
   </entry>
   
