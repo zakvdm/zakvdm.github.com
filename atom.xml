@@ -4,7 +4,7 @@
   <title><![CDATA[zakvdm.org]]></title>
   <link href="http://zakvdm.org/atom.xml" rel="self"/>
   <link href="http://zakvdm.org/"/>
-  <updated>2013-02-05T22:31:01+02:00</updated>
+  <updated>2013-02-07T23:07:27+02:00</updated>
   <id>http://zakvdm.org/</id>
   <author>
     <name><![CDATA[Zak van der Merwe]]></name>
@@ -12,6 +12,43 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Generating random Strings in Scala]]></title>
+    <link href="http://zakvdm.org/blog/2013/02/07/generating-random-strings-in-scala/"/>
+    <updated>2013-02-07T21:20:00+02:00</updated>
+    <id>http://zakvdm.org/blog/2013/02/07/generating-random-strings-in-scala</id>
+    <content type="html"><![CDATA[<p>Hopefully this is just the first of many posts about Scala.</p>
+
+<figure class='code'><figcaption><span>Generate a String with 5 random alphanumeric characters</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="nc">Random</span><span class="o">.</span><span class="n">alphanumeric</span><span class="o">.</span><span class="n">take</span><span class="o">(</span><span class="mi">5</span><span class="o">).</span><span class="n">mkString</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<!-- continue -->
+
+
+<p><code>Random.alphanumeric</code> produces a stream of type <a href="http://www.scala-lang.org/api/current/index.html#scala.collection.immutable.Stream"><code>Stream[Char]</code></a>. It&#8217;s interesting that Streams are &#8220;immutable&#8221; even though they&#8217;re lazy (elements are only evaluated when they are needed). This is because the &#8220;elements&#8221; of the stream are immutable (even though some haven&#8217;t been realised yet). If we keep a reference to the stream, we can confirm that it always produces the same output.</p>
+
+<figure class='code'><figcaption><span>Streams are immutable</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">val</span> <span class="n">charStream</span> <span class="k">=</span> <span class="nc">Random</span><span class="o">.</span><span class="n">alphanumeric</span>
+</span><span class='line'><span class="n">assert</span><span class="o">(</span><span class="n">charStream</span><span class="o">.</span><span class="n">take</span><span class="o">(</span><span class="mi">100</span><span class="o">)</span> <span class="o">==</span> <span class="n">charStream</span><span class="o">.</span><span class="n">take</span><span class="o">(</span><span class="mi">100</span><span class="o">))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The Stream stores computed values, so Streams can be used to memoize algorithms. This also means we have to be wary of the memory usage when consuming the Stream.</p>
+
+<p>The scala doc for <code>Stream</code> has this neat (and rather mind-bending) example:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">val</span> <span class="n">fibs</span><span class="k">:</span> <span class="kt">Stream</span><span class="o">[</span><span class="kt">BigInt</span><span class="o">]</span> <span class="k">=</span> <span class="nc">BigInt</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span> <span class="o">#::</span> <span class="nc">BigInt</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span> <span class="o">#::</span> <span class="n">fibs</span><span class="o">.</span><span class="n">zip</span><span class="o">(</span><span class="n">fibs</span><span class="o">.</span><span class="n">tail</span><span class="o">).</span><span class="n">map</span> <span class="o">{</span> <span class="n">n</span> <span class="k">=&gt;</span> <span class="n">n</span><span class="o">.</span><span class="n">_1</span> <span class="o">+</span> <span class="n">n</span><span class="o">.</span><span class="n">_2</span> <span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Once I wrapped my head around what <code>zip</code> does with Streams, I was still surprised by the way <code>map</code> is applied &#8220;just in time&#8221; to generate the next element of the tail. My functional programming chops are still not that juicy, but I get a sense of something quite powerful here.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[More space for apps on your Nexus One]]></title>
@@ -582,15 +619,6 @@ Well, I liked chapter 5. It&#8217;s point of view is consistent with the rest of
 <p>It&#8217;s clear that he is rewriting the experience into a vision of his own liking: how it <em>should</em> have been, no doubt. He barely mentions his cousin - it&#8217;s him alone against the wilderness. He is enamoured with the idea of the explorer; like I am with that of the writer. There is a simple strand of empathy and understanding in him that - when he writes about the conditions, when he admires the beauty of the women, when he hopes for something better for the people that he meets - shields his writing from the shifting expectations of younger generations.</p>
 
 <p>It is a good book to read if you like Graham Greene, or if you like to travel improbably, or if you worry and think and worry again about Africa.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Book Review: Pride and Prejudice - Jane Austen]]></title>
-    <link href="http://zakvdm.org/blog/2009/09/30/pride-and-prejudice-jane-austen/"/>
-    <updated>2009-09-30T21:41:52+02:00</updated>
-    <id>http://zakvdm.org/blog/2009/09/30/pride-and-prejudice-jane-austen</id>
-    <content type="html"><![CDATA[<p>The trick to liking P&amp;P is to think of it as science fiction. Face it: pre-Victorian society is as alien as any amorphous hivemind lizardman colony that’s crept onto your bookshelf in the past. Like all good sci-fi, you get dropped right into the middle of the world. It doesn’t belabour the rules: it trusts you to figure them out for yourself. And you do, and after a while you even accept them, and later still you start to play by them. You accept that this is what passes for love on this planet; you laugh at the silliness of some; and you adore the insights of others. But like all sci-fi, the disconnect between that world and your own is too large: you see the lines connecting us to them interweave, but you never quite see the point. It might also be helpful to think of Mr. Darcey as a robot sent back from the future to destroy all spontaneity and joy.</p>
 ]]></content>
   </entry>
   

@@ -143,15 +143,19 @@
         <lastmod>2013-02-03T18:25:13+02:00</lastmod>
     </url>
     <url>
+        <loc>http://zakvdm.org/blog/2013/02/07/generating-random-strings-in-scala/</loc>
+        <lastmod>2013-02-07T23:07:16+02:00</lastmod>
+    </url>
+    <url>
         <loc>http://zakvdm.org/robots.txt</loc>
         <lastmod>2013-02-01T21:09:26+02:00</lastmod>
     </url>
     <url>
         <loc>http://zakvdm.org/</loc>
-        <lastmod>2013-02-05T22:30:34+02:00</lastmod>
+        <lastmod>2013-02-07T23:07:16+02:00</lastmod>
     </url>
     <url>
         <loc>http://zakvdm.org/blog/archives/</loc>
-        <lastmod>2013-02-05T22:30:34+02:00</lastmod>
+        <lastmod>2013-02-07T23:07:16+02:00</lastmod>
     </url>
 </urlset>

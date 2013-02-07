@@ -5,11 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Book Review: Retribution: The Battle for Japan, 1944-45 - Max Hastings - zakvdm.org</title>
+  <title>Generating random Strings in Scala - zakvdm.org</title>
   <meta name="author" content="Zak van der Merwe">
 
   
-  <meta name="description" content="I hardly need to say that a book about war is depressing, but Max Hastings is depressingly good. He makes this squalor of men come alive—there are &hellip;">
+  <meta name="description" content="Hopefully this is just the first of many posts about Scala. Generate a String with 5 random alphanumeric characters1
+Random.alphanumeric.take(5). &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://zakvdm.org/blog/2008/06/30/retribution-the-battle-for-japan-1944-45-max-hastings/">
+  <link rel="canonical" href="http://zakvdm.org/blog/2013/02/07/generating-random-strings-in-scala/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -77,7 +78,7 @@
   
   <header>
     
-      <h1 class="entry-title">Book Review: Retribution: The Battle for Japan, 1944-45 - Max Hastings</h1>
+      <h1 class="entry-title">Generating Random Strings in Scala</h1>
     
     
       <p class="meta">
@@ -93,14 +94,42 @@
   
 
 
-<time datetime="2008-06-30T21:40:17+02:00" pubdate data-updated="true">Jun 30<span>th</span>, 2008</time>
+<time datetime="2013-02-07T21:20:00+02:00" pubdate data-updated="true">Feb 7<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>I hardly need to say that a book about war is depressing, but Max Hastings is depressingly good. He makes this squalor of men come alive—there are images stuck more firmly in my head now than any war movie has managed previously. It is not the sort of book you forget. It was good enough to leave me harrowed and subtly changed. It is difficult for a while to be living in Japan. I began the book worried that it would be too specific, too small in scope, too laden with details I don’t care about—I ended it wanting more.</p>
+<div class="entry-content"><p>Hopefully this is just the first of many posts about Scala.</p>
+
+<figure class='code'><figcaption><span>Generate a String with 5 random alphanumeric characters</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="nc">Random</span><span class="o">.</span><span class="n">alphanumeric</span><span class="o">.</span><span class="n">take</span><span class="o">(</span><span class="mi">5</span><span class="o">).</span><span class="n">mkString</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<!-- continue -->
+
+
+<p><code>Random.alphanumeric</code> produces a stream of type <a href="http://www.scala-lang.org/api/current/index.html#scala.collection.immutable.Stream"><code>Stream[Char]</code></a>. It&#8217;s interesting that Streams are &#8220;immutable&#8221; even though they&#8217;re lazy (elements are only evaluated when they are needed). This is because the &#8220;elements&#8221; of the stream are immutable (even though some haven&#8217;t been realised yet). If we keep a reference to the stream, we can confirm that it always produces the same output.</p>
+
+<figure class='code'><figcaption><span>Streams are immutable</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">val</span> <span class="n">charStream</span> <span class="k">=</span> <span class="nc">Random</span><span class="o">.</span><span class="n">alphanumeric</span>
+</span><span class='line'><span class="n">assert</span><span class="o">(</span><span class="n">charStream</span><span class="o">.</span><span class="n">take</span><span class="o">(</span><span class="mi">100</span><span class="o">)</span> <span class="o">==</span> <span class="n">charStream</span><span class="o">.</span><span class="n">take</span><span class="o">(</span><span class="mi">100</span><span class="o">))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The Stream stores computed values, so Streams can be used to memoize algorithms. This also means we have to be wary of the memory usage when consuming the Stream.</p>
+
+<p>The scala doc for <code>Stream</code> has this neat (and rather mind-bending) example:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">val</span> <span class="n">fibs</span><span class="k">:</span> <span class="kt">Stream</span><span class="o">[</span><span class="kt">BigInt</span><span class="o">]</span> <span class="k">=</span> <span class="nc">BigInt</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span> <span class="o">#::</span> <span class="nc">BigInt</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span> <span class="o">#::</span> <span class="n">fibs</span><span class="o">.</span><span class="n">zip</span><span class="o">(</span><span class="n">fibs</span><span class="o">.</span><span class="n">tail</span><span class="o">).</span><span class="n">map</span> <span class="o">{</span> <span class="n">n</span> <span class="k">=&gt;</span> <span class="n">n</span><span class="o">.</span><span class="n">_1</span> <span class="o">+</span> <span class="n">n</span><span class="o">.</span><span class="n">_2</span> <span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Once I wrapped my head around what <code>zip</code> does with Streams, I was still surprised by the way <code>map</code> is applied &#8220;just in time&#8221; to generate the next element of the tail. My functional programming chops are still not that juicy, but I get a sense of something quite powerful here.</p>
 </div>
 
 
@@ -123,12 +152,12 @@
   
 
 
-<time datetime="2008-06-30T21:40:17+02:00" pubdate data-updated="true">Jun 30<span>th</span>, 2008</time>
+<time datetime="2013-02-07T21:20:00+02:00" pubdate data-updated="true">Feb 7<span>th</span>, 2013</time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/books/'>Books</a>, <a class='category' href='/blog/categories/japanese/'>Japanese</a>, <a class='category' href='/blog/categories/reviews/'>Reviews</a>
+    <a class='category' href='/blog/categories/compsci/'>CompSci</a>, <a class='category' href='/blog/categories/scala/'>Scala</a>
   
 </span>
 
@@ -137,7 +166,7 @@
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://zakvdm.org/blog/2008/06/30/retribution-the-battle-for-japan-1944-45-max-hastings/" data-via="" data-counturl="http://zakvdm.org/blog/2008/06/30/retribution-the-battle-for-japan-1944-45-max-hastings/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://zakvdm.org/blog/2013/02/07/generating-random-strings-in-scala/" data-via="" data-counturl="http://zakvdm.org/blog/2013/02/07/generating-random-strings-in-scala/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -148,10 +177,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2008/05/30/read-real-japanese-fiction/" title="Previous Post: Book Review: Read Real Japanese Fiction">&laquo; Book Review: Read Real Japanese Fiction</a>
+        <a class="basic-alignment left" href="/blog/2013/02/03/more-space-for-apps-on-your-nexus-one/" title="Previous Post: More space for apps on your Nexus One">&laquo; More space for apps on your Nexus One</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2008/08/30/a-change-of-tongue-antjie-krog/" title="Next Post: Book Review: A Change of Tongue - Antjie Krog">Book Review: A Change of Tongue - Antjie Krog &raquo;</a>
       
     </p>
   </footer>
@@ -266,8 +293,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://zakvdm.org/blog/2008/06/30/retribution-the-battle-for-japan-1944-45-max-hastings/';
-        var disqus_url = 'http://zakvdm.org/blog/2008/06/30/retribution-the-battle-for-japan-1944-45-max-hastings/';
+        var disqus_identifier = 'http://zakvdm.org/blog/2013/02/07/generating-random-strings-in-scala/';
+        var disqus_url = 'http://zakvdm.org/blog/2013/02/07/generating-random-strings-in-scala/';
         var disqus_script = 'embed.js';
       
     (function () {

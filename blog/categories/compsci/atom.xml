@@ -4,7 +4,7 @@
   <title><![CDATA[Category: CompSci | zakvdm.org]]></title>
   <link href="http://zakvdm.org/blog/categories/compsci/atom.xml" rel="self"/>
   <link href="http://zakvdm.org/"/>
-  <updated>2013-02-05T22:31:01+02:00</updated>
+  <updated>2013-02-07T23:07:27+02:00</updated>
   <id>http://zakvdm.org/</id>
   <author>
     <name><![CDATA[Zak van der Merwe]]></name>
@@ -12,6 +12,36 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Generating random Strings in Scala]]></title>
+    <link href="http://zakvdm.org/blog/2013/02/07/generating-random-strings-in-scala/"/>
+    <updated>2013-02-07T21:20:00+02:00</updated>
+    <id>http://zakvdm.org/blog/2013/02/07/generating-random-strings-in-scala</id>
+    <content type="html"><![CDATA[<p>Hopefully this is just the first of many posts about Scala.</p>
+
+<p><code>scala Generate a String with 5 random alphanumeric characters
+Random.alphanumeric.take(5).mkString
+</code></p>
+
+<!-- continue -->
+
+
+<p><code>Random.alphanumeric</code> produces a stream of type <a href="http://www.scala-lang.org/api/current/index.html#scala.collection.immutable.Stream"><code>Stream[Char]</code></a>. It's interesting that Streams are "immutable" even though they're lazy (elements are only evaluated when they are needed). This is because the "elements" of the stream are immutable (even though some haven't been realised yet). If we keep a reference to the stream, we can confirm that it always produces the same output.</p>
+
+<p><code>scala Streams are immutable
+val charStream = Random.alphanumeric
+assert(charStream.take(100) == charStream.take(100))
+</code>
+The Stream stores computed values, so Streams can be used to memoize algorithms. This also means we have to be wary of the memory usage when consuming the Stream.</p>
+
+<p>The scala doc for <code>Stream</code> has this neat (and rather mind-bending) example:
+<code>scala
+val fibs: Stream[BigInt] = BigInt(0) #:: BigInt(1) #:: fibs.zip(fibs.tail).map { n =&gt; n._1 + n._2 }
+</code>
+Once I wrapped my head around what <code>zip</code> does with Streams, I was still surprised by the way <code>map</code> is applied "just in time" to generate the next element of the tail. My functional programming chops are still not that juicy, but I get a sense of something quite powerful here.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Using your own domain with Google App Engine]]></title>

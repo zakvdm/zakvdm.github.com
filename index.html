@@ -9,7 +9,8 @@
   <meta name="author" content="Zak van der Merwe">
 
   
-  <meta name="description" content="I still love my Nexus One after all these years, but when I run out of space for new apps, I often feel like weeping. Here&#8217;s a handy trick if &hellip;">
+  <meta name="description" content="Hopefully this is just the first of many posts about Scala. Generate a String with 5 random alphanumeric characters1
+Random.alphanumeric.take(5). &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -74,6 +75,70 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/02/07/generating-random-strings-in-scala/">Generating Random Strings in Scala</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-07T21:20:00+02:00" pubdate data-updated="true">Feb 7<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hopefully this is just the first of many posts about Scala.</p>
+
+<figure class='code'><figcaption><span>Generate a String with 5 random alphanumeric characters</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="nc">Random</span><span class="o">.</span><span class="n">alphanumeric</span><span class="o">.</span><span class="n">take</span><span class="o">(</span><span class="mi">5</span><span class="o">).</span><span class="n">mkString</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<!-- continue -->
+
+
+<p><code>Random.alphanumeric</code> produces a stream of type <a href="http://www.scala-lang.org/api/current/index.html#scala.collection.immutable.Stream"><code>Stream[Char]</code></a>. It&#8217;s interesting that Streams are &#8220;immutable&#8221; even though they&#8217;re lazy (elements are only evaluated when they are needed). This is because the &#8220;elements&#8221; of the stream are immutable (even though some haven&#8217;t been realised yet). If we keep a reference to the stream, we can confirm that it always produces the same output.</p>
+
+<figure class='code'><figcaption><span>Streams are immutable</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">val</span> <span class="n">charStream</span> <span class="k">=</span> <span class="nc">Random</span><span class="o">.</span><span class="n">alphanumeric</span>
+</span><span class='line'><span class="n">assert</span><span class="o">(</span><span class="n">charStream</span><span class="o">.</span><span class="n">take</span><span class="o">(</span><span class="mi">100</span><span class="o">)</span> <span class="o">==</span> <span class="n">charStream</span><span class="o">.</span><span class="n">take</span><span class="o">(</span><span class="mi">100</span><span class="o">))</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The Stream stores computed values, so Streams can be used to memoize algorithms. This also means we have to be wary of the memory usage when consuming the Stream.</p>
+
+<p>The scala doc for <code>Stream</code> has this neat (and rather mind-bending) example:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">val</span> <span class="n">fibs</span><span class="k">:</span> <span class="kt">Stream</span><span class="o">[</span><span class="kt">BigInt</span><span class="o">]</span> <span class="k">=</span> <span class="nc">BigInt</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span> <span class="o">#::</span> <span class="nc">BigInt</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span> <span class="o">#::</span> <span class="n">fibs</span><span class="o">.</span><span class="n">zip</span><span class="o">(</span><span class="n">fibs</span><span class="o">.</span><span class="n">tail</span><span class="o">).</span><span class="n">map</span> <span class="o">{</span> <span class="n">n</span> <span class="k">=&gt;</span> <span class="n">n</span><span class="o">.</span><span class="n">_1</span> <span class="o">+</span> <span class="n">n</span><span class="o">.</span><span class="n">_2</span> <span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Once I wrapped my head around what <code>zip</code> does with Streams, I was still surprised by the way <code>map</code> is applied &#8220;just in time&#8221; to generate the next element of the tail. My functional programming chops are still not that juicy, but I get a sense of something quite powerful here.</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -553,51 +618,6 @@ I&#8217;ve been trying to watch more Japanese films lately. It&#8217;s a good wa
 
     </article>
   
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2010/12/20/dealing-with-similar-kanji-the-movie-method/">累 vs 細 - the Movie Method</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
-  
-
-
-<time datetime="2010-12-20T00:00:00+02:00" pubdate data-updated="true">Dec 20<span>th</span>, 2010</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>After <a href="http://ankisrs.net/">Anki</a>, the best thing to happen to my Japanese is
-the <a href="http://drmoviemethod.blogspot.com/">Movie Method</a>. Once kanji stopped
-being intimidating and began to feel like a tool, Japanese really started to
-&#8220;click.&#8221; But as much as I love the Movie Method, it does have its occasional
-quirks.</p>
-
-</div>
-  
-  
-    <footer>
-      <a rel="full-article" href="/blog/2010/12/20/dealing-with-similar-kanji-the-movie-method/">Read on &rarr;</a>
-    </footer>
-  
-
-
-    </article>
-  
   <div class="pagination">
     
       <a class="prev" href="/blog/page/2/">&larr; Older</a>
@@ -625,6 +645,10 @@ quirks.</p>
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2013/02/07/generating-random-strings-in-scala/">Generating random Strings in Scala</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2013/02/03/more-space-for-apps-on-your-nexus-one/">More space for apps on your Nexus One</a>
       </li>
     
@@ -638,10 +662,6 @@ quirks.</p>
     
       <li class="post">
         <a href="/blog/2012/09/19/haruki-murakamis-short-stories---tv-people/">Haruki Murakami&#8217;s short stories - TV People</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/08/30/using-your-own-domain-with-google-app-engine/">Using your own domain with Google App Engine</a>
       </li>
     
   </ul>
