@@ -4,7 +4,7 @@
   <title><![CDATA[Category: CompSci | zakvdm.org]]></title>
   <link href="http://zakvdm.org/blog/categories/compsci/atom.xml" rel="self"/>
   <link href="http://zakvdm.org/"/>
-  <updated>2013-02-07T23:07:27+02:00</updated>
+  <updated>2013-02-07T23:09:57+02:00</updated>
   <id>http://zakvdm.org/</id>
   <author>
     <name><![CDATA[Zak van der Merwe]]></name>
@@ -24,7 +24,7 @@
 Random.alphanumeric.take(5).mkString
 </code></p>
 
-<!-- continue -->
+<!-- more -->
 
 
 <p><code>Random.alphanumeric</code> produces a stream of type <a href="http://www.scala-lang.org/api/current/index.html#scala.collection.immutable.Stream"><code>Stream[Char]</code></a>. It's interesting that Streams are "immutable" even though they're lazy (elements are only evaluated when they are needed). This is because the "elements" of the stream are immutable (even though some haven't been realised yet). If we keep a reference to the stream, we can confirm that it always produces the same output.</p>

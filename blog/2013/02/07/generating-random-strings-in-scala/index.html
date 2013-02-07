@@ -108,7 +108,7 @@ Random.alphanumeric.take(5). &hellip;">
 </span></code></pre></td></tr></table></div></figure>
 
 
-<!-- continue -->
+<!-- more -->
 
 
 <p><code>Random.alphanumeric</code> produces a stream of type <a href="http://www.scala-lang.org/api/current/index.html#scala.collection.immutable.Stream"><code>Stream[Char]</code></a>. It&#8217;s interesting that Streams are &#8220;immutable&#8221; even though they&#8217;re lazy (elements are only evaluated when they are needed). This is because the &#8220;elements&#8221; of the stream are immutable (even though some haven&#8217;t been realised yet). If we keep a reference to the stream, we can confirm that it always produces the same output.</p>

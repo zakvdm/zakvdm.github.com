@@ -111,30 +111,12 @@ Random.alphanumeric.take(5). &hellip;">
 </span></code></pre></td></tr></table></div></figure>
 
 
-<!-- continue -->
-
-
-<p><code>Random.alphanumeric</code> produces a stream of type <a href="http://www.scala-lang.org/api/current/index.html#scala.collection.immutable.Stream"><code>Stream[Char]</code></a>. It&#8217;s interesting that Streams are &#8220;immutable&#8221; even though they&#8217;re lazy (elements are only evaluated when they are needed). This is because the &#8220;elements&#8221; of the stream are immutable (even though some haven&#8217;t been realised yet). If we keep a reference to the stream, we can confirm that it always produces the same output.</p>
-
-<figure class='code'><figcaption><span>Streams are immutable</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">val</span> <span class="n">charStream</span> <span class="k">=</span> <span class="nc">Random</span><span class="o">.</span><span class="n">alphanumeric</span>
-</span><span class='line'><span class="n">assert</span><span class="o">(</span><span class="n">charStream</span><span class="o">.</span><span class="n">take</span><span class="o">(</span><span class="mi">100</span><span class="o">)</span> <span class="o">==</span> <span class="n">charStream</span><span class="o">.</span><span class="n">take</span><span class="o">(</span><span class="mi">100</span><span class="o">))</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>The Stream stores computed values, so Streams can be used to memoize algorithms. This also means we have to be wary of the memory usage when consuming the Stream.</p>
-
-<p>The scala doc for <code>Stream</code> has this neat (and rather mind-bending) example:</p>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">val</span> <span class="n">fibs</span><span class="k">:</span> <span class="kt">Stream</span><span class="o">[</span><span class="kt">BigInt</span><span class="o">]</span> <span class="k">=</span> <span class="nc">BigInt</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span> <span class="o">#::</span> <span class="nc">BigInt</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span> <span class="o">#::</span> <span class="n">fibs</span><span class="o">.</span><span class="n">zip</span><span class="o">(</span><span class="n">fibs</span><span class="o">.</span><span class="n">tail</span><span class="o">).</span><span class="n">map</span> <span class="o">{</span> <span class="n">n</span> <span class="k">=&gt;</span> <span class="n">n</span><span class="o">.</span><span class="n">_1</span> <span class="o">+</span> <span class="n">n</span><span class="o">.</span><span class="n">_2</span> <span class="o">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Once I wrapped my head around what <code>zip</code> does with Streams, I was still surprised by the way <code>map</code> is applied &#8220;just in time&#8221; to generate the next element of the tail. My functional programming chops are still not that juicy, but I get a sense of something quite powerful here.</p>
 </div>
   
+  
+    <footer>
+      <a rel="full-article" href="/blog/2013/02/07/generating-random-strings-in-scala/">Read on &rarr;</a>
+    </footer>
   
 
 
