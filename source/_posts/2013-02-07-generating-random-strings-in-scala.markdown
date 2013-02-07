@@ -12,7 +12,7 @@ Hopefully this is just the first of many posts about Scala.
 ``` scala Generate a String with 5 random alphanumeric characters
 Random.alphanumeric.take(5).mkString
 ```
-<!-- continue -->
+<!-- more -->
 <code>Random.alphanumeric</code> produces a stream of type [<code>Stream[Char]</code>][1]. It's interesting that Streams are "immutable" even though they're lazy (elements are only evaluated when they are needed). This is because the "elements" of the stream are immutable (even though some haven't been realised yet). If we keep a reference to the stream, we can confirm that it always produces the same output.
 
 ``` scala Streams are immutable
