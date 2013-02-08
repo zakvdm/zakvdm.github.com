@@ -124,7 +124,7 @@ Random.alphanumeric.take(5). &hellip;">
 
 <p>The scala doc for <code>Stream</code> has this neat (and rather mind-bending) example:</p>
 
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<figure class='code'><figcaption><span>Recursive Fibonacci numbers using Streams</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class='scala'><span class='line'><span class="k">val</span> <span class="n">fibs</span><span class="k">:</span> <span class="kt">Stream</span><span class="o">[</span><span class="kt">BigInt</span><span class="o">]</span> <span class="k">=</span> <span class="nc">BigInt</span><span class="o">(</span><span class="mi">0</span><span class="o">)</span> <span class="o">#::</span> <span class="nc">BigInt</span><span class="o">(</span><span class="mi">1</span><span class="o">)</span> <span class="o">#::</span> <span class="n">fibs</span><span class="o">.</span><span class="n">zip</span><span class="o">(</span><span class="n">fibs</span><span class="o">.</span><span class="n">tail</span><span class="o">).</span><span class="n">map</span> <span class="o">{</span> <span class="n">n</span> <span class="k">=&gt;</span> <span class="n">n</span><span class="o">.</span><span class="n">_1</span> <span class="o">+</span> <span class="n">n</span><span class="o">.</span><span class="n">_2</span> <span class="o">}</span>
 </span></code></pre></td></tr></table></div></figure>
 
