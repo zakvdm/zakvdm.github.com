@@ -22,7 +22,7 @@ assert(charStream.take(100) == charStream.take(100))
 The Stream stores computed values, so Streams can be used to memoize algorithms. This also means we have to be wary of the memory usage when consuming the Stream.
 
 The scala doc for <code>Stream</code> has this neat (and rather mind-bending) example:
-``` scala
+``` scala Recursive Fibonacci numbers using Streams
 val fibs: Stream[BigInt] = BigInt(0) #:: BigInt(1) #:: fibs.zip(fibs.tail).map { n => n._1 + n._2 }
 ```
 Once I wrapped my head around what <code>zip</code> does with Streams, I was still surprised by the way <code>map</code> is applied "just in time" to generate the next element of the tail. My functional programming chops are still not that juicy, but I get a sense of something quite powerful here.
