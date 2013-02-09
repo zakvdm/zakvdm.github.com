@@ -4,10 +4,10 @@
 
 url: http://zakvdm.org
 title: "zakvdm.org"
-#subtitle: "Zak's personal weblog"
+#subtitle: "A blog about nothing"
 author: Zak van der Merwe
 simple_search: http://google.com/search
-description: "I write about all sorts of things: Japanese, Computer Science, technology, and my take on the world. If you're interested, you can subscribe to a specific topic below. Or subscribe to all of them if you happen to have the exact same interests as me - in which case, maybe you want to be my friend??"
+description: "A blog about all sorts of things: Japanese, Computer Science, technology, and my take on the world."
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
