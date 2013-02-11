@@ -44,6 +44,7 @@ module Jekyll
       # Set the meta-description for this page.
       meta_description_prefix  = site.config['category_meta_description_prefix'] || 'Category: '
       self.data['description'] = "#{meta_description_prefix}#{category}"
+      self.data['feed_url'] = "#{category_dir}/atom.xml"
     end
 
   end

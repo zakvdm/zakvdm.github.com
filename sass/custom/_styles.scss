@@ -1,2 +1,4 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+article header a { @include link-colors($sidebar-link-color, $hover: $sidebar-link-color-hover, $focus: $sidebar-link-color-hover, $visited: $sidebar-link-color, $active: $sidebar-link-color-active); }
+
