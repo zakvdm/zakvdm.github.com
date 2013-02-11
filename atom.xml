@@ -4,7 +4,7 @@
   <title><![CDATA[zakvdm.org]]></title>
   <link href="http://zakvdm.org/atom.xml" rel="self"/>
   <link href="http://zakvdm.org/"/>
-  <updated>2013-02-11T23:40:19+02:00</updated>
+  <updated>2013-02-12T00:05:06+02:00</updated>
   <id>http://zakvdm.org/</id>
   <author>
     <name><![CDATA[Zak van der Merwe]]></name>
@@ -12,6 +12,39 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Japanese words: mutual benefit]]></title>
+    <link href="http://zakvdm.org/blog/2013/02/11/japanese-words-mutual-benefit/"/>
+    <updated>2013-02-11T23:44:00+02:00</updated>
+    <id>http://zakvdm.org/blog/2013/02/11/japanese-words-mutual-benefit</id>
+    <content type="html"><![CDATA[<p>This phrase came up in Japanese class last week:</p>
+
+<blockquote><p>戦略的<strong>互恵</strong>関係 (senryakuteki <strong>gokei</strong> kankei)<br/>
+strategically mutually beneficial relationship</p></blockquote>
+
+<p>互恵 was new to me, and it sure seems like a handy word to have in the toolbox.</p>
+
+<!-- continue -->
+
+
+<p>Surprisingly, <a href="http://dictionary.goo.ne.jp/leaf/jn2/240752/m0u/">goo</a> has a definition for the whole phrase:</p>
+
+<blockquote><p>安全保障・外交・経済・環境・エネルギーなどさまざまな分野で共通の利益を目ざそうとする二国間関係。</p></blockquote>
+
+<p>Trying to explain the meaning of this phrase in my own stumbling Japanese led naturally to a whole set of nouns that use the &#8220;help&#8221; kanji 助:</p>
+
+<ul>
+<li> 互助 (gojo)   - mutual <strong>help</strong></li>
+<li> 共助 (kyoujo) - mutual <strong>help</strong></li>
+<li> 自助 (jijo)   - self <strong>help</strong></li>
+<li> 補助 (hojo)   - other <strong>help</strong> (aid)</li>
+</ul>
+
+
+<p>There you have it. A little help in every conceivable direction (except maybe receiving help without reciprocating?). Nothing too surprising here if you know the kanji (which is precisely why you should!).</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Generating random Strings in Scala]]></title>
@@ -600,25 +633,6 @@ Well, I liked chapter 5. It&#8217;s point of view is consistent with the rest of
 
 
 <p>I can say only this about Murakami&#8217;s novels for sure: when I read them, I have thoughts that I otherwise don&#8217;t. I am troubled by things which normally seem entirely ordinary.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Book Review: Journey Without Maps - Graham Greene]]></title>
-    <link href="http://zakvdm.org/blog/2009/11/08/journey-without-maps-graham-greene/"/>
-    <updated>2009-11-08T20:38:47+02:00</updated>
-    <id>http://zakvdm.org/blog/2009/11/08/journey-without-maps-graham-greene</id>
-    <content type="html"><![CDATA[<p>The first Graham Greene book I read was the <em>Heart of the Matter.</em> I read it in 2006. It was before I went to Japan, before I had a real job, before a lot of things that make me me happened. It&#8217;s a surprise that I&#8217;ve carried on with him as my favourite writer now for these 3 years. I feel different in so many ways, but more or less the same about his books.</p>
-
-<p>By now I&#8217;ve read all his famous books. What&#8217;s left for me is just to re-read, and then read the lesser stuff, and read <em>about</em> him. It&#8217;s the prospect of a slow death: I&#8217;ll grow bored, I&#8217;ll find new writers, I&#8217;ll forget what it was that he did to me or that I did to him which holds me so captivated.</p>
-
-<p><em>Journey without Maps</em> feels like the beginning.</p>
-
-<p>Greene writes about his first trip out of Europe: 350 miles&#8217; marching through Liberia over 4 weeks in 1935. He hires dozens of men to carry his belongings, catches fever, gets lost, loses hope, drinks and drinks and as is inevitable of an experience as large as this, he is changed.</p>
-
-<p>It&#8217;s clear that he is rewriting the experience into a vision of his own liking: how it <em>should</em> have been, no doubt. He barely mentions his cousin - it&#8217;s him alone against the wilderness. He is enamoured with the idea of the explorer; like I am with that of the writer. There is a simple strand of empathy and understanding in him that - when he writes about the conditions, when he admires the beauty of the women, when he hopes for something better for the people that he meets - shields his writing from the shifting expectations of younger generations.</p>
-
-<p>It is a good book to read if you like Graham Greene, or if you like to travel improbably, or if you worry and think and worry again about Africa.</p>
 ]]></content>
   </entry>
   
